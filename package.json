@@ -1,0 +1,18 @@
+{
+  "name" : "galaxy-mysql",
+  "description" : "A galaxy wrapper for mysql.",
+  "version" : "0.1.0",
+  "author" : "Andrius Bentkus <andrius.bentkus@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/txdv/galaxy-mysql"
+  },
+  "engines" : ["node >= 0.10"],
+  "main" : "main",
+  "files" : [ "main.js" ],
+  "dependencies" : {
+    "mysql" : ">= 2.4.0",
+    "galaxy" : ">= 0.1.7",
+    "galaxy-augment" : ">= 0.1.0"
+  }
+}
