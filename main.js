@@ -2,7 +2,7 @@
 	var galaxy = require('galaxy');
 	var mysql  = require('mysql');
 
-	require('galaxy-nova');
+	require('galaxy-augment');
 
 	function augmentConnection(connection) {
 		connection.queryAsync   = galaxy.star(galaxy.nova(connection, connection.query, ["rows", "fields"]));
