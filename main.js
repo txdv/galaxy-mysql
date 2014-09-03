@@ -5,7 +5,7 @@
 	require('galaxy-augment');
 
 	function augmentConnection(connection) {
-		connection.queryAsync   = galaxy.star(galaxy.nova(connection, connection.query, ["rows", "fields"]));
+		connection.queryAsync = galaxy.star(connection.query, { returnObject: [ "rows", "fields" ] });
 
 		['connect', 'ping', 'statistics', 'end'].forEach(function (obj) {
 			connection[obj + 'Async'] = galaxy.star(connection[obj]);

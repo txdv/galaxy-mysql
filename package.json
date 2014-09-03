@@ -1,7 +1,7 @@
 {
   "name" : "galaxy-mysql",
   "description" : "A galaxy wrapper for mysql.",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "author" : "Andrius Bentkus <andrius.bentkus@gmail.com>",
   "repository" : {
     "type" : "git",
